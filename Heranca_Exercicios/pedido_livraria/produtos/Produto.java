@@ -1,4 +1,6 @@
-abstract class Produto {
+package produtos; 
+
+ public abstract class Produto {
 
 	private String titulo;
 	private int ano;
@@ -12,7 +14,7 @@ abstract class Produto {
 		this.precoBruto = precoBruto;
 	}
 
-	abstract double obterPrecoLiquido();
+	public abstract double obterPrecoLiquido();
 
 	public String getTitulo() {
 		return titulo;

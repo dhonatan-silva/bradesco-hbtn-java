@@ -1,3 +1,5 @@
+package produtos;
+
 public class Dvd extends Produto {
 	private String diretor;
 	private String genero;
@@ -11,7 +13,7 @@ public class Dvd extends Produto {
 	}
 
 	@Override
-	double obterPrecoLiquido() {
+	public double obterPrecoLiquido() {
 		return getPrecoBruto() + (getPrecoBruto() * 0.2);
 	}
 

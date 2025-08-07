@@ -1,3 +1,5 @@
+package produtos;
+
 public class Livro extends Produto {
 
 	private int paginas;
@@ -12,7 +14,7 @@ public class Livro extends Produto {
 	}
 
 	@Override
-	double obterPrecoLiquido() {
+	public double obterPrecoLiquido() {
 		return getPrecoBruto() + (getPrecoBruto() * 0.15);
 	}
 

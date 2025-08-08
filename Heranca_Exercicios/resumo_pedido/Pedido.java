@@ -30,10 +30,10 @@ public class Pedido {
 		StringBuilder builder = new StringBuilder();
 		builder.append("------- RESUMO PEDIDO -------\n");
 		for (ItemPedido item : itens) {
-			builder.append("Tipo: " + item.getProduto().getClass().getSimpleName().toString() + " ");
-			builder.append("Titulo: " + item.getProduto().getTitulo() + " ");
-			builder.append(String.format("Preco: %.2f", item.getProduto().obterPrecoLiquido()) + " ");
-			builder.append("Quant: " + item.getQuantidade() + " ");
+			builder.append("Tipo: " + item.getProduto().getClass().getSimpleName().toString() + "  ");
+			builder.append("Titulo: " + item.getProduto().getTitulo() + "  ");
+			builder.append(String.format("Preco: %.2f", item.getProduto().obterPrecoLiquido()) + "  ");
+			builder.append("Quant: " + item.getQuantidade() + "  ");
 			builder.append(String.format("Total: %.2f", item.getProduto().obterPrecoLiquido() * item.getQuantidade()) + "\n");
 		}
 

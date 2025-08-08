@@ -1,19 +1,19 @@
 public class Mensagem {
 
-	private TipoMensagem tipo;
+	private TipoMensagem tipoMensagem;
 	private String texto;
 
-	public Mensagem(TipoMensagem tipo, String texto) {
-		this.tipo = tipo;
+	public Mensagem(TipoMensagem tipoMensagem, String texto) {
+		this.tipoMensagem = tipoMensagem;
 		this.texto = texto;
 	}
 
-	public TipoMensagem getTipo() {
-		return tipo;
+	public TipoMensagem getTipoMensagem() {
+		return tipoMensagem;
 	}
 
-	public void setTipo(TipoMensagem tipo) {
-		this.tipo = tipo;
+	public void setTipoMensagem(TipoMensagem tipoMensagem) {
+		this.tipoMensagem = tipoMensagem;
 	}
 
 	public String getTexto() {

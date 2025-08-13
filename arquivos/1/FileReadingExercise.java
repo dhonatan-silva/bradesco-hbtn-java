@@ -10,7 +10,7 @@ public class FileReadingExercise {
 
 		// efetue a leitura do arquivo
 
-		File arquivo = new File("C:\\workspace\\Java-classes-objetos\\src\\arquivos\\um\\" + fileName);
+		File arquivo = new File(fileName);
 
 		try (BufferedReader br = new BufferedReader(new FileReader(arquivo))) {
 			String linha;

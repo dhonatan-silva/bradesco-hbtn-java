@@ -22,7 +22,8 @@ public class Estoque {
 			lerArquivo();
 
 			// Adicionar novo produto
-			int id = listaProdutos.size() + 1;
+			Produto last = listaProdutos.get(listaProdutos.size() - 1);
+			int id = last.getId() + 1;
 			listaProdutos.add(new Produto(id, nome, quantidade, preco));
 
 			// Limpar arquivo
@@ -38,14 +39,13 @@ public class Estoque {
 	}
 
 	public void excluirProduto(int idExcluir) {
-		int index = (idExcluir <= 0) ? 0 : idExcluir - 1;
-
 		try {
 			// ler arquivo
 			lerArquivo();
 
 			// remover produto
-			listaProdutos.remove(index);
+			Produto produto = identificarProduto(idExcluir);
+			listaProdutos.remove(produto);
 
 			// limpar arquivo
 			limparArquivo();

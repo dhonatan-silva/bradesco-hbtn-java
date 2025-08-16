@@ -32,7 +32,7 @@ public class ArrayExercicio {
 		System.out.println(builder.toString());
 
 		for (int i = 0; i < numeros.length; i++) {
-			soma = soma + numeros[i];
+			soma += numeros[i];
 		}
 
 		System.out.println("Soma de todos os números: " + soma);

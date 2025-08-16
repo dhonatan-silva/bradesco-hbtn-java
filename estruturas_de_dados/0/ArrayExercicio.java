@@ -15,8 +15,7 @@ public class ArrayExercicio {
 		// Utilize scanner.nextInt(); para receber o numero digitado
 		System.out.println("Digite 10 números inteiros:");
 		for (int i = 0; i < numeros.length; i++) {
-			int n = Integer.parseInt(scanner.nextLine());
-			numeros[i] = n;
+			numeros[i] = scanner.nextInt();
 		}
 		// Exibindo os resultados
 		for (int i = 0; i < numeros.length; i++) {

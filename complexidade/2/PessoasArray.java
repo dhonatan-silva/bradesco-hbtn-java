@@ -26,12 +26,12 @@ public class PessoasArray {
 		while (inicio <= fim) {
 			int meio = inicio + (fim - inicio) / 2;
 			System.out.println("Passando pelo indice: " + meio);
+		
 			if (nomes[meio] == nome) {
 				encontrado = true;
 				System.out.println("Nome " + nome + " encontrado na posição " + meio);
 				break;
-			}
-			if (nomes[meio] .charAt(0) < nome.charAt(0)) {
+			} else if (nomes[meio].charAt(0) < nome.charAt(0)) {
 				inicio = meio + 1;
 			} else {
 				fim = meio - 1;

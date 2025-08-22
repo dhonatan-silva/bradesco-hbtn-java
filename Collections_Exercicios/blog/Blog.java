@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 public class Blog {
 
-	private ArrayList<Post> listaPosts;
+	private List<Post> listaPosts;
 
 	public Blog() {
 		listaPosts = new ArrayList<>();
@@ -44,11 +44,11 @@ public class Blog {
 
 	}
 
-	public ArrayList<Post> getListaPosts() {
+	public List<Post> getListaPosts() {
 		return listaPosts;
 	}
 
-	public void setListaPosts(ArrayList<Post> listaPosts) {
+	public void setListaPosts(List<Post> listaPosts) {
 		this.listaPosts = listaPosts;
 	}
 

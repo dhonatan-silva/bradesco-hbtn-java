@@ -40,9 +40,9 @@ public class ProcessamentoDePagamentos {
 		if (pagamento.equals("falha")) {
 			logger.error("Erro ao processar o pagamento {}: Falha na transação.", indice);
 		} else if (pagamento.equals("pendente")) {
-			logger.error("Pagamento {} está pendente. Aguardando confirmação.", indice);
+			logger.warn("Pagamento {} está pendente. Aguardando confirmação.", indice);
 		} else {
-			logger.error("Pagamento {} processado com sucesso.", indice);
+			logger.info("Pagamento {} processado com sucesso.", indice);
 		}
 	}
 }
